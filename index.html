@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <main>
+      <!-- menu -->
+      <section class="user">
+        <div class="user_menu">
+          <div class="avatar">
+            <img
+              class="avatar-img"
+              src="/images/image-jeremy.png"
+              alt="avatar"
+            />
+          </div>
+          <div class="profile">
+            <p>Report for</p>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </div>
+        <div class="user_data">
+          <p onclick="changeDaily()" class="daily">Daily</p>
+          <p onclick="changeWeekly()" class="weekly">Weekly</p>
+          <p onclick="changeMonthly()" class="monthly">Monthly</p>
+        </div>
+      </section>
+
+      <!-- work -->
+      <section class="work" weekly>
+        <div class="work-banner">
+          <img class="icon" src="/images/icon-work.svg" alt="work icon" />
+        </div>
+        <div class="work_timeframe tf">
+          <div class="title">
+            <h2>Work</h2>
+            <button><img src="/images/icon-ellipsis.svg" alt="" /></button>
+          </div>
+          <div class="time">
+            <h1 class="work-hr">32hrs</h1>
+            <p class="work-time">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- play -->
+      <section class="play" weekly>
+        <div class="play-banner">
+          <img class="icon" src="/images/icon-play.svg" alt="play icon" />
+        </div>
+        <div class="play_timeframe tf">
+          <div class="title">
+            <h2>Play</h2>
+            <button>
+              <img src="/images/icon-ellipsis.svg" alt="ellipsis" />
+            </button>
+          </div>
+          <div class="time">
+            <h1 class="play-hr">10hrs</h1>
+            <p class="play-time">Last Week - 8hrs</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- study -->
+      <section class="study" weekly>
+        <div class="study-banner">
+          <img class="icon" src="/images/icon-study.svg" alt="work icon" />
+        </div>
+        <div class="study_timeframe tf">
+          <div class="title">
+            <h2>Study</h2>
+            <button>
+              <img src="/images/icon-ellipsis.svg" alt="ellipsis" />
+            </button>
+          </div>
+          <div class="time">
+            <h1 class="study-hr">4hrs</h1>
+            <p class="study-time">Last Week - 7hrs</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- excercise -->
+      <section class="excercise" weekly>
+        <div class="excercise-banner">
+          <img class="icon" src="/images/icon-exercise.svg" alt="work icon" />
+        </div>
+        <div class="excercise_timeframe tf">
+          <div class="title">
+            <h2>Excercise</h2>
+            <button>
+              <img src="/images/icon-ellipsis.svg" alt="ellipsis" />
+            </button>
+          </div>
+          <div class="time">
+            <h1 class="exc-hr">4hrs</h1>
+            <p class="exc-time">Last Week - 5hrs</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- social -->
+      <section class="social" weekly>
+        <div class="social-banner">
+          <img class="icon" src="/images/icon-social.svg" alt="work icon" />
+        </div>
+        <div class="social_timeframe tf">
+          <div class="title">
+            <h2>Social</h2>
+            <button>
+              <img src="/images/icon-ellipsis.svg" alt="ellipsis" />
+            </button>
+          </div>
+          <div class="time">
+            <h1 class="social-hr">5hrs</h1>
+            <p class="social-time">Last Week - 10hrs</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- self care -->
+      <section class="selfcare" weekly>
+        <div class="selfcare-banner">
+          <img class="icon" src="/images/icon-self-care.svg" alt="work icon" />
+        </div>
+        <div class="selfcare_timeframe tf">
+          <div class="title">
+            <h2>Self Care</h2>
+            <button>
+              <img src="/images/icon-ellipsis.svg" alt="ellipsis" />
+            </button>
+          </div>
+          <div class="time">
+            <h1 class="self-hr">2hrs</h1>
+            <p class="self-time">Last Week - 2hrs</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="/index.js"></script>
+</html>

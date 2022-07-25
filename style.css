@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: hsl(226, 43%, 10%);
+    margin: 2rem 2rem;
+}
+
+main {
+    display: grid;
+    gap: 1.25rem;
+}
+
+section {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+button {
+    border: none;
+    background: none;
+    text-align: right;
+    transform: translateY(-0.05rem);
+    cursor: pointer;
+    opacity: 60%;
+}
+
+button:hover {
+    opacity: 100%;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.time p {
+    transform: translateY(0.3rem);
+}
+
+.icon {
+    display: block;
+    margin-left: auto;
+}
+
+.tf:hover {
+    cursor: pointer;
+    background-color: hsl(235, 45%, 61%);
+}
+
+/* user */
+.user_menu {
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 0.8rem;
+    display: flex;
+    height: 4.5rem;
+    padding: 2rem 2rem;
+}
+
+.avatar-img {
+    width: 4rem;
+    height: 4rem;
+    border: 0.2rem solid white;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.profile {
+    padding-top: 0.9rem;
+}
+
+.user_data {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.user_data p {
+    cursor: pointer;
+    padding-top: 0.9rem;
+}
+
+.user_data p:hover {
+    color: white;
+    font-weight: 400;
+}
+
+
+/* work */
+.work-banner {
+    background-color: hsl(15, 100%, 70%);
+    height: 3rem;
+    overflow: hidden;
+}
+
+/* play */
+.play-banner {
+    background-color: hsl(195, 74%, 62%);
+    height: 3rem;
+    overflow: hidden;
+}
+
+/* study */
+.study-banner {
+    background-color: hsl(348, 100%, 68%);
+    height: 3rem;
+    overflow: hidden;
+}
+
+/* excercise */
+.excercise-banner {
+    background-color: hsl(145, 58%, 55%);
+    height: 3rem;
+    overflow: hidden;
+}
+
+/* social */
+.social-banner {
+    background-color: hsl(264, 64%, 52%);
+    height: 3rem;
+    overflow: hidden;
+}
+
+/* self care */
+.selfcare-banner {
+    background-color: hsl(43, 84%, 65%);
+    height: 3rem;
+    overflow: hidden;
+}
+
+/* typo */
+h1 {
+    color: white;
+    font-weight: 300;
+    text-align: left;
+}
+
+h2 {
+    font-size: 1.125rem;
+    color: white;
+    font-weight: 400;
+}
+
+p {
+    color: hsl(236, 100%, 87%);
+    font-weight: 300;
+}
+
+@media screen and (min-width: 650px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 7rem auto;
+        justify-content: center;
+    }
+
+    .tf:hover {
+        height: 13rem;
+        cursor: pointer;
+        background-color: hsl(235, 45%, 61%);
+    }
+
+    section {
+        height: 12rem;
+    }
+
+    .time {
+        display: block;
+    }
+
+    .user_menu {
+        height: max-content;
+    }
+
+    .time {
+        padding-top: 0.5rem;
+    }
+
+}
+
+@media screen and (min-width: 1060px) {
+    main {
+        grid-template-columns: 15.3rem 15.3rem 15.3rem 15.3rem;
+        margin: 7rem auto;
+        justify-content: center;
+    }
+
+    section {
+        height: fit-content;
+        width: 15rem;
+    }
+
+    .tf:hover {
+        height: fit-content;
+    }
+
+    .time {
+        display: block;
+    }
+
+    .user {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        height: 100%;
+    }
+
+    .user_menu {
+        height: 55%;
+        display: block;
+    }
+
+    .user_data {
+        display: block;
+        justify-content: none;
+        padding-left: 2rem;
+        padding-top: 0.3rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        padding-top: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .profile {
+        padding-top: 0.1rem;
+    }
+}
+
+
+
+
+
